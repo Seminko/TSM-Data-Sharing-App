@@ -1,6 +1,6 @@
-# Ascension TSM Data Sharing App
+# TSM Data Sharing App
 
-[Trade Skill Master](https://tradeskillmaster.com/) data sharing application for [Ascension WoW's](https://ascension.gg/) [TSM Addon](https://github.com/Ascension-Addons/TradeSkillMaster).
+[Trade Skill Master](https://tradeskillmaster.com/) data sharing application for WoW 3.3.5 TSM Addon.
 
 You can get a hold of me on [SzylerAddons Discord](https://discord.gg/uTxuDvuHcn) (Other DEVs Addons (N-Z) --> #tsm-data-sharing) - @the_real_mortificator.
 
@@ -9,7 +9,7 @@ Thanks to [Szyler](https://github.com/Szyler) and [MummieSenpai](https://github.
 &nbsp;
 
 > [!IMPORTANT]
-> You can download the app from the [Releases page](https://github.com/Seminko/Ascension-TSM-Data-Sharing-App/releases) - ATDSA_vX.X.rar.
+> You can download the app from the [Releases page](https://github.com/Seminko/TSM-Data-Sharing-App/releases) - ATDSA_vX.X.rar.
 
 > [!CAUTION]
 > Will most likely be blocked by Windows Defender / Antivirus software
@@ -23,18 +23,18 @@ Automatically downloads latest price data to your local PC / uploads price data 
 In other words, you will always have access to the most recent prices and all the other TSM data points you love!<br>
 
 ## What it does - non-TLDR
-When first run, it will ask you whether you want to create a scheduled task to run the app on startup (input Y or N in the console and press Enter). This will happen only when first running the script. The idea behind it running on startup is due to the fact that we can only update data in the WTF folder when Ascension is not running, because each /reload, logout to char select or game restart automatically writes to the files (ie it would rewrite what we put there). Hence whenever you launch Ascension you will have the latest data there is. More info in the FAQ section below.<br>
+When first run, it will ask you whether you want to create a scheduled task to run the app on startup (input Y or N in the console and press Enter). This will happen only when first running the script. The idea behind it running on startup is due to the fact that we can only update data in the WTF folder when WoW is not running, because each /reload, logout to char select or game restart automatically writes to the files (ie it would rewrite what we put there). Hence whenever you launch WoW you will have the latest data there is. More info in the FAQ section below.<br>
 When first run, it will also create `update_times.json` in the directory where the EXE file is saved which tracks what LUA file got last updated. Don't mess with this file.
 
 There are two core functionalities:<br>
 - Data download
   - Downloads newest data from the DB.
-  - Happens ONLY when Ascension is not running and is being downloaded every 5 minutes.
+  - Happens ONLY when WoW is not running and is being downloaded every 5 minutes.
 - Data upload
   - When you do a scan, could be partial or full, please do a /reload when you can. This will make the game write to the LUA file, get detected by the app and uploaded to the DB.
   - The script checks for changes every 5 minutes.
 
-BTW, the app runs in command line. When you run Ascension TSM Data Sharing App.exe it opens the console and starts working right away, ie there is no install.
+BTW, the app runs in command line. When you run TSM Data Sharing App.exe it opens the console and starts working right away, ie there is no install.
 
 &nbsp;
 
@@ -47,4 +47,4 @@ BTW, the app runs in command line. When you run Ascension TSM Data Sharing App.e
 &nbsp;
 
 ## Check out FAQ
-[Wiki FAQ](https://github.com/Seminko/Ascension-TSM-Data-Sharing-App/wiki/FAQ)
+[Wiki FAQ](https://github.com/Seminko/TSM-Data-Sharing-App/wiki/FAQ)
